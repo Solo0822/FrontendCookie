@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     async function saveLocationData(consentId) {
         try {
-            const response = await fetch("https://ipinfo.io/json?token=10772b28291307");
+            const response = await fetch("https://ipinfo.io/json?token=4cd6d3d37b73f3");
             const data = await response.json();
             const locationData = {
                 consentId,
