@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     async function sendPreferencesToDB(consentId, preferences) {
         try {
-            const response = await fetch("https://backendcookie-8qc1.onrender.com/api/save", {
+            const response = await fetch("https://backendcookie-zi2t.onrender.com/api/save", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ consentId, preferences }),
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     async function sendLocationDataToDB(locationData) {
         try {
-            await fetch("https://backendcookie-8qc1.onrender.com/api/location", {
+            await fetch("https://backendcookie-zi2t.onrender.com/api/location", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(locationData),
@@ -209,7 +209,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
 
         try {
-            const response = await fetch(`https://backendcookie-8qc1.onrender.com/api/delete-my-data/${consentId}`, {
+            const response = await fetch(`https://backendcookie-zi2t.onrender.com/api/delete-my-data/${consentId}`, {
                 method: "DELETE",
             });
 
