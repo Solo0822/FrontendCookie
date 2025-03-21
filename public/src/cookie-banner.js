@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Send Preferences to Backend
     async function sendPreferencesToDB(consentId, preferences) {
         try {
-            const response = await fetch("https://backendcookie-8qc1.onrender.com/api/save", {
+            const response = await fetch("https://backendcookie-zi2t.onrender.com/api/save", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ consentId, preferences }),
@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Save Location Data
     async function saveLocationData(consentId) {
         try {
-            const response = await fetch("https://ipinfo.io/json?token=10772b28291307");
+            const response = await fetch("https://ipinfo.io/json?token=4cd6d3d37b73f3");
             const data = await response.json();
             const locationData = {
                 consentId,
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     async function sendLocationDataToDB(locationData) {
         try {
-            await fetch("https://backendcookie-8qc1.onrender.com/api/location", {
+            await fetch("https://backendcookie-zi2t.onrender.com/api/location", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(locationData),
@@ -206,7 +206,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
 
             try {
-                const response = await fetch("https://backendcookie-8qc1.onrender.com/api/register", {
+                const response = await fetch("https://backendcookie-zi2t.onrender.com/api/register", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ username, password }),
